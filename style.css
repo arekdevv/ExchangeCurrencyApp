@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #414c5e;
+}
+
+.wrapper {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    width: 1000px;
+    box-shadow: 0 0 30px 5px #233144;
+    background-image: linear-gradient(45deg, #2f3f50, #2c4255);
+    border-radius: 25px;
+}
+
+.wrapper h1,
+.wrapper h2 {
+    text-transform: capitalize;
+}
+
+.wrapper h1 {
+    font-size: 3.4rem;
+    margin-bottom: 5px;
+
+}
+
+.wrapper h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"].value-one,
+input[type="number"].value-two,
+textarea {
+    background-color: #233144;
+    opacity: .7;
+    border-radius: 25px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-left,
+.currency-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app input {
+    width: 100%;
+    font-size: 5rem;
+    margin-bottom: 5px;
+}
+
+.app input,
+.app select {
+    color: #fff;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+.app select {
+    padding: 5px 10px;
+    font-size: 2.6rem;
+    cursor: pointer;
+    text-align-last: center;
+}
+
+.app input:focus,
+.app select:focus {
+    outline: none;
+    color: rgb(14, 145, 145);
+}
+
+.app option {
+    color: #fff;
+    background-color: rgb(14, 145, 145);
+}
+
+.swap-btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px 40px;
+    margin: 0 25px;
+    background-color: rgb(95, 212, 212);
+    font-size: 2.6rem;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.swap-btn:focus {
+    outline: none;
+    background-color: rgb(75, 197, 197);
+}
+
+
+.fa-arrow-right-arrow-left {
+    padding: 5px;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: zoom .3s;
+}
+
+.wrapper .results {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 2.6rem;
+}
+
+@keyframes zoom {
+    to {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}

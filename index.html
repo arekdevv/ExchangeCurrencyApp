@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Currency App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f2ac1ecc54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>exchange currency app</h1>
+        <h2>check exchange rates</h2>
+        <div class="app">
+            <div class="currency-left">
+                <input type="number" class="value-one" value="1">
+                <select class="currency-one">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="CHF">CHF</option>
+                    <option value="GBP">BRL</option>
+                    <option value="RUB">RUB</option>
+                    <option value="QAR">QAR</option>
+                </select>
+            </div>
+            <button class="swap-btn">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+            <div class="currency-right">
+                <input type="number" class="value-two" disabled>
+                <select class="currency-two">
+                    <option value="PLN">PLN</option>
+                    <option value="EUR" selected>EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="CHF">CHF</option>
+                    <option value="BRL">BRL</option>
+                    <option value="RUB">RUB</option>
+                    <option value="QAR">QAR</option>
+                </select>
+            </div>
+
+        </div>
+        <p class="results"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
